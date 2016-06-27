@@ -96,7 +96,7 @@ public class Main {
                 int currentNum = intList.get(i);
                 System.out.println(currentNum);
                 resultList.add(100);
-                //resultList.
+                //resultList.///
             }
 
 
