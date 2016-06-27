@@ -15,14 +15,13 @@ creator:
 
 > ***Note:*** _This should be completed independently._
 
-In this lab, you will be completing a series of 3 challenge questions that involve data collections. These questions are very similar to what you would see in an interview, so this is great practice. Think through each problem before you start creating code, possibly writing out pseudocode if it will help you. Run your code against the included test cases when you are finished. **Feel free to look up any Java documentation to help you (ie arrays, Lists, etc.)**
+In this lab, you will be completing a series of 3 challenge questions that involve data collections. These questions are very similar to what you would see in an interview, so this is great practice. Think through each problem before you start creating code, possibly writing out pseudocode if it will help you. Test your code when you are finished. **Feel free to look up any Java documentation to help you (ie arrays, Lists, etc.)**
 
 ## Exercise
 
 #### Requirements
 
 - Complete each question in its own provided method
-- Your methods must pass all of the included test cases
 
 **Bonus:**
 - Complete the bonus question (Marked as Bonus)
