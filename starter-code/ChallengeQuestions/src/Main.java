@@ -1,8 +1,17 @@
+import java.lang.reflect.Array;
 import java.util.*;
 
 public class Main {
     public static void main(String[] args) {
         //Add code here to test your solutions
+        findLargestAndSmallest(new int[]{2, 3, 4, 7});
+
+        int[] intArray = new int[]{3, 4, 2, 6, 9};
+        List<Integer> intList = Arrays.asList(1, 5, 7, 9);
+
+
+        sumOfTwoLargest(intList);
+        removeDuplicatesFromList(intList);
     }
 
     /**
@@ -16,6 +25,21 @@ public class Main {
      * @return An array of integers with two elements, the largest and smallest from the method parameter
      */
     public static int[] findLargestAndSmallest(int array[]){
+        int max = array[0];
+        int min = array[0];
+
+        for (int i = 0; i < array.length; i++) {
+            if (max < array[i]) {
+                max = array[i];
+            } else {
+                min = array[i];
+            }
+        }
+
+        System.out.println("max: " + max+ "\nmin: " + min);
+
+        int[] results = new int[]{max, min};
+        return results;
 
     }
 
@@ -31,8 +55,23 @@ public class Main {
      * @param intList A List of integers of any size.
      * @return Sum of the two largest values
      */
-    public static int sumOfTwoLargest(List intList){
-       
+    public static int sumOfTwoLargest(List<Integer> intList){
+        int firstMax = intList.get(0);
+        int seconMax = intList.get(1);
+
+
+
+        for (int i=0; i < intList.size(); i++) {
+            if (firstMax < intList.get(i)|| firstMax > seconMax) {
+                firstMax = seconMax;
+                seconMax = intList.get(i);
+            } else if (seconMax < intList.get(i)) {
+                seconMax = intList.get(i);
+            }
+        }
+
+        System.out.println(firstMax+seconMax);
+        return firstMax+seconMax;
     }
 
 
@@ -51,7 +90,19 @@ public class Main {
      * @return A List of Integers that doesn't contain duplicates.
      */
     public static List removeDuplicatesFromList(List intList){
+        List<Integer> resultList = new ArrayList<>();
+        for (int i = 0; i < intList.size(); i++) {
+            if (resultList.indexOf(intList.get(i)) == -1) {
+                int currentNum = intList.get(i);
+                System.out.println(currentNum);
+                resultList.add(100);
+                //resultList.
+            }
 
+
+        }
+
+        return  resultList;
     }
 
 
@@ -77,7 +128,7 @@ public class Main {
      * @param array2 Array of sorted integers
      * @return Array of sorted integers, merged from array1 and array2
      */
-    public static int[] mergeSortedArrays(int[] array1, int[] array2){
-        return null;
-    }
+//    public static int[] mergeSortedArrays(int[] array1, int[] array2){
+//        return null;
+//    }
 }
